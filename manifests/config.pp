@@ -5,9 +5,9 @@
 #
 
 define jolokia::config (
-  $app        = $title,
-  $ensure     = 'file',
-  $properties = {},
+  String                 $app        = $title,
+  Enum['file', 'absent'] $ensure     = 'file',
+  Hash                   $properties = {},
 ) {
   $disclaimer = "# This file is controlled by puppet\n# LOCAL CHANGES WILL BE OVERWRITTEN\n#"
   $props_str = $properties.join_keys_to_values('=').join("\n")
