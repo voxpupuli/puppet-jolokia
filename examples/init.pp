@@ -11,16 +11,16 @@
 #
 include ::jolokia
 
-$properties = {
+$config = {
   'host'           => '*',
   'port'           => '7878',
-  'policyLocation' => 'file:///etc/jolokia/policy.xml',
+  'policyLocation' => 'file:///etc/jolokia/security.xml',
 }
 jolokia::config { 'puppetserver':
   properties => $config,
 }
 
 $hosts = [ '1.1.1.1', '::1' ]
-jolokia::config { 'policy':
+jolokia::policy { 'security':
   allowed_hosts => $hosts,
 }
