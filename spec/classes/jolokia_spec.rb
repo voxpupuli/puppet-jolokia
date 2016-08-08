@@ -21,7 +21,7 @@ describe 'jolokia' do
             {
               jvm_agent_ensure: '1.3.3',
               jvm_agent_name:   'jolokia-agents',
-              config_dir:       '/opt/etc/jolokia',
+              config_dir:       '/opt/etc/jolokia'
             }
           end
           it { is_expected.to compile.with_all_deps }
