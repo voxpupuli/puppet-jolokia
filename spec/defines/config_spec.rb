@@ -15,7 +15,7 @@ describe 'jolokia::config', type: :define do
     }
   end
 
-  props = <<-PROPS.gsub(/^ {4}/, '')
+  props = <<-PROPS.gsub(%r{^ {4}}, '')
     # This file is controlled by puppet
     # LOCAL CHANGES WILL BE OVERWRITTEN
     #

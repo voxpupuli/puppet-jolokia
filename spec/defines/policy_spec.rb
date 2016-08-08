@@ -12,7 +12,7 @@ describe 'jolokia::policy', type: :define do
     }
   end
 
-  policy = <<-POLICY.gsub(/^ {4}/, '')
+  policy = <<-POLICY.gsub(%r{^ {4}}, '')
     <?xml version="1.0" encoding="utf-8"?>
     <!-- This file is controlled by puppet -->
     <!-- LOCAL CHANGES WILL BE OVERWRITTEN -->
