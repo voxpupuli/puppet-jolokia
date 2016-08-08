@@ -8,7 +8,7 @@ describe 'jolokia::policy', type: :define do
   let(:params) do
     {
       ensure:        'file',
-      allowed_hosts: [ '1.1.1.1', '::1' ]
+      allowed_hosts: ['1.1.1.1', '::1']
     }
   end
 
