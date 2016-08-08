@@ -31,7 +31,7 @@ describe 'jolokia::config', :type => :define do
           facts
         end
 
-        context "jolokia::config with all parameters" do
+        context 'jolokia::config with all parameters' do
           it { is_expected.to compile.with_all_deps }
 
           it { is_expected.to contain_file('/etc/jolokia/puppetserver.properties').with_ensure('file') }

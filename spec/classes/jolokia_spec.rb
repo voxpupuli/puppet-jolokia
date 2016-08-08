@@ -8,7 +8,7 @@ describe 'jolokia' do
           facts
         end
 
-        context "jolokia class without any parameters" do
+        context 'jolokia class without any parameters' do
           it { is_expected.to compile.with_all_deps }
 
           it { is_expected.to contain_class('jolokia') }
@@ -16,7 +16,7 @@ describe 'jolokia' do
           it { is_expected.to contain_file('/etc/jolokia').with_ensure('directory') }
         end
 
-        context "jolokia class with all parameters" do
+        context 'jolokia class with all parameters' do
           let(:params) do
             {
               jvm_agent_ensure: '1.3.3',

@@ -31,7 +31,7 @@ describe 'jolokia::policy', :type => :define do
           facts
         end
 
-        context "jolokia::policy with all parameters" do
+        context 'jolokia::policy with all parameters' do
           it { is_expected.to compile.with_all_deps }
 
           it { is_expected.to contain_file('/etc/jolokia/security.xml').with_ensure('file') }
