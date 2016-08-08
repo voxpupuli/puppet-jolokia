@@ -41,4 +41,3 @@ describe 'jolokia::config', type: :define do
     end
   end
 end
-
