@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'jolokia::policy', :type => :define do
+describe 'jolokia::policy', type: :define do
   let :pre_condition do
     'include ::jolokia'
   end
@@ -8,11 +8,11 @@ describe 'jolokia::policy', :type => :define do
   let(:params) do
     {
       ensure:        'file',
-      allowed_hosts: [ '1.1.1.1', '::1' ]
+      allowed_hosts: ['1.1.1.1', '::1']
     }
   end
 
-  policy = <<-POLICY.gsub(/^ {4}/, '')
+  policy = <<-POLICY.gsub(%r{^ {4}}, '')
     <?xml version="1.0" encoding="utf-8"?>
     <!-- This file is controlled by puppet -->
     <!-- LOCAL CHANGES WILL BE OVERWRITTEN -->
@@ -31,7 +31,7 @@ describe 'jolokia::policy', :type => :define do
           facts
         end
 
-        context "jolokia::policy with all parameters" do
+        context 'jolokia::policy with all parameters' do
           it { is_expected.to compile.with_all_deps }
 
           it { is_expected.to contain_file('/etc/jolokia/security.xml').with_ensure('file') }
