@@ -12,6 +12,7 @@ describe 'jolokia' do
           it { is_expected.to compile.with_all_deps }
 
           it { is_expected.to contain_class('jolokia') }
+          it { is_expected.to contain_class('jolokia::install') }
           it { is_expected.to contain_file('/etc/jolokia').with_ensure('directory') }
         end
 
