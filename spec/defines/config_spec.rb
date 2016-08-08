@@ -10,8 +10,7 @@ describe 'jolokia::config', type: :define do
       ensure:        'file',
       properties: { 'config' => '/etc/jolokia/security.xml',
                     'host'   => '*',
-                    'port'   => '7887'
-                  }
+                    'port'   => '7887' }
     }
   end
 
