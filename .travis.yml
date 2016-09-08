@@ -20,11 +20,11 @@ matrix:
   - rvm: 2.2
     env: PUPPET_VERSION="~> 4.0" STRICT_VARIABLES="yes" CHECK=test
   - rvm: 2.3.1
-    env: PUPPET_VERSION="~> 4.0" STRICT_VARIABLES="yes" CHECK=build
-  - rvm: 2.3.1
     env: PUPPET_VERSION="~> 4.0" STRICT_VARIABLES="yes" CHECK=rubocop
   - rvm: 2.3.1
     env: PUPPET_VERSION="~> 4.0" STRICT_VARIABLES="yes" CHECK=test
+  - rvm: 2.3.1
+    env: PUPPET_VERSION="~> 4.0" STRICT_VARIABLES="yes" CHECK=build
   - rvm: 2.4.0-preview1
     env: PUPPET_VERSION="~> 4.0" STRICT_VARIABLES="yes" CHECK=test
   allow_failures:
@@ -33,6 +33,8 @@ notifications:
   email: false
 deploy:
   provider: puppetforge
+  deploy:
+    branch: ha-bug-puppet-forge
   user: puppet
   password:
     secure: "U4Ns9FQHltLzjkRBIlT5ec2uIK6Vzb6LMP3lQABb2cOd4CwheU8GgX37+TY53uzAWSonlYEorIWg9RSO5Rj+9k6yj/o2pYooltR/SPnObiAPaiFpiWvmHeLF6l7pjJL+qUBy6Fis+d28EuenhQ9n43CRIgcBw6mdjBvsWE9TUhkJKKz8kQE+MFytaYL1ohiFebcSUx7tLxLN+rM0YZ+2Q5nu8Vyh/BErdA8wuGHjZfrqLWVRyoSyrZgPmyGpFXzNyncjBoTSykAGk+KN50czf0RBiodpLWBmXdJR+bvHIlMXtMcfADHWYb3NpEsutEOLsjWQ+AcTHcAorDM6bkouNEseiRvJmguPBnrAnbnShl8oKGi9d108E/a/MccVOTq7GibgBBGsLbOzjfNQwJlLJvX+4MIZlWLO8C6+5+4PEK9Myus9+Om5UAjYOJ87ef7qkTms9K1tbScHIcM81csPrZeDEMPrqe8n3MkoVuW/p8qVQDjvL8q8XFRKgT5ZknA+XlZ2DbrRirSY5t7JpvScTI9elAxv6LrqMVcxOMvDVh9zAWAE4CkkhgYgRJqkYDC+GoVGHrgfN0cROvzwFgnlv8sh3vlLhfXTkyHVFHIYmglPrCahdCkHusY0FRWwJYK2GWjWm9CElkuG0wBOIITkdbk9L54264H5Cq1ZKlXYFUk="
@@ -40,5 +42,5 @@ deploy:
     tags: true
     # all_branches is required to use tags
     all_branches: true
-    # Only publish if our main Ruby target builds
-    rvm: 2.3.1
+    # Only publish the build marked with "DEPLOY_TO_FORGE"
+    condition: "$DEPLOY_TO_FORGE = yes"
