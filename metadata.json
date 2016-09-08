@@ -1,7 +1,7 @@
 {
-  "name": "voxpupuli-jolokia",
-  "version": "0.1.0",
-  "author": "voxpupuli",
+  "name": "puppet-jolokia",
+  "version": "1.0.0",
+  "author": "Vox Pupuli",
   "summary": "Install jolokia agents, and configure",
   "license": "Apache-2.0",
   "source": "https://github.com/voxpupuli/puppet-jolokia",
