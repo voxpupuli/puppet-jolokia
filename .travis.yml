@@ -29,6 +29,9 @@ matrix:
     env: PUPPET_VERSION="~> 4.0" STRICT_VARIABLES="yes" CHECK=test
   allow_failures:
     - rvm: 2.4.0-preview1
+branches:
+  only:
+  - master
 notifications:
   email: false
 deploy:
