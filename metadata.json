@@ -1,6 +1,6 @@
 {
   "name": "puppet-jolokia",
-  "version": "1.0.1-rc0",
+  "version": "1.0.1",
   "author": "Vox Pupuli",
   "summary": "Install jolokia agents, and configure",
   "license": "Apache-2.0",
@@ -16,21 +16,19 @@
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 4.0.0 < 5.0.0"
+      "version_requirement": ">= 4.6.1 < 5.0.0"
     }
   ],
   "operatingsystem_support": [
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
-        "6",
         "7"
       ]
     },
     {
       "operatingsystem": "RedHat",
       "operatingsystemrelease": [
-        "5",
         "6",
         "7"
       ]
