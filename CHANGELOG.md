@@ -4,8 +4,8 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not impact the functionality of the module.
 
-## [1.0.1](https://github.com/voxpupuli/puppet-jolokia/tree/1.0.1) (2017-02-11)
-[Full Changelog](https://github.com/voxpupuli/puppet-jolokia/compare/v1.0.0...1.0.1)
+## [v1.0.1](https://github.com/voxpupuli/puppet-jolokia/tree/v1.0.1) (2017-02-11)
+[Full Changelog](https://github.com/voxpupuli/puppet-jolokia/compare/v1.0.0...v1.0.1)
 
 **Merged pull requests:**
 
