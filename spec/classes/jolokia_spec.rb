@@ -24,6 +24,7 @@ describe 'jolokia' do
               config_dir:       '/opt/etc/jolokia'
             }
           end
+
           it { is_expected.to compile.with_all_deps }
 
           it { is_expected.to contain_class('jolokia') }
