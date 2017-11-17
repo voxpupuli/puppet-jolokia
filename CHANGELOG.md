@@ -1,10 +1,19 @@
-# Change log
+# Changelog
 
 All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
-These should not impact the functionality of the module.
+These should not affect the functionality of the module.
 
-## [v1.0.1](https://github.com/voxpupuli/puppet-jolokia/tree/v1.0.1) (2017-02-11)
+## [v1.1.0](https://github.com/voxpupuli/puppet-jolokia/tree/v1.1.0) (2017-11-17)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-jolokia/compare/v1.0.1...v1.1.0)
+
+**Merged pull requests:**
+
+- bump puppet version dependency to \>= 4.7.1 \< 6.0.0 [\#23](https://github.com/voxpupuli/puppet-jolokia/pull/23) ([bastelfreak](https://github.com/bastelfreak))
+
+## [v1.0.1](https://github.com/voxpupuli/puppet-jolokia/tree/v1.0.1) (2017-02-13)
+
 [Full Changelog](https://github.com/voxpupuli/puppet-jolokia/compare/v1.0.0...v1.0.1)
 
 **Merged pull requests:**
@@ -12,6 +21,9 @@ These should not impact the functionality of the module.
 - modulesync 0.16.8 [\#15](https://github.com/voxpupuli/puppet-jolokia/pull/15) ([nibalizer](https://github.com/nibalizer))
 
 ## [v1.0.0](https://github.com/voxpupuli/puppet-jolokia/tree/v1.0.0) (2016-09-08)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-jolokia/compare/62fb15016e26bd0c023d3df55e8b132c2c68b126...v1.0.0)
+
 **Merged pull requests:**
 
 - Update metadata.json requirements/dependencies [\#6](https://github.com/voxpupuli/puppet-jolokia/pull/6) ([alexjfisher](https://github.com/alexjfisher))
