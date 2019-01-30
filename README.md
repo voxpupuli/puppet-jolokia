@@ -9,7 +9,7 @@
 
 ## Overview
 
-This Puppet 4.+ module installs and helps configure
+This Puppet 5.+ module installs and helps configure
 [jolokia](https://jolokia.org/) (jvm) agents.
 
 
