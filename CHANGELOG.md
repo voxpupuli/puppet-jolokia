@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v2.0.0](https://github.com/voxpupuli/puppet-jolokia/tree/v2.0.0) (2019-03-09)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-jolokia/compare/v1.1.1...v2.0.0)
+
+**Breaking changes:**
+
+- modulesync 2.5.1 and drop Puppet 4 [\#39](https://github.com/voxpupuli/puppet-jolokia/pull/39) ([bastelfreak](https://github.com/bastelfreak))
+
+**Merged pull requests:**
+
+- modulesync 2.2.0 and allow puppet 6.x [\#36](https://github.com/voxpupuli/puppet-jolokia/pull/36) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v1.1.1](https://github.com/voxpupuli/puppet-jolokia/tree/v1.1.1) (2018-09-06)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-jolokia/compare/v1.1.0...v1.1.1)
@@ -20,6 +32,7 @@ These should not affect the functionality of the module.
 
 **Merged pull requests:**
 
+- release 1.1.0 [\#24](https://github.com/voxpupuli/puppet-jolokia/pull/24) ([bastelfreak](https://github.com/bastelfreak))
 - bump puppet version dependency to \>= 4.7.1 \< 6.0.0 [\#23](https://github.com/voxpupuli/puppet-jolokia/pull/23) ([bastelfreak](https://github.com/bastelfreak))
 
 ## [v1.0.1](https://github.com/voxpupuli/puppet-jolokia/tree/v1.0.1) (2017-02-13)
