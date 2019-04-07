@@ -8,5 +8,5 @@ class jolokia (
   file { $config_dir:
     ensure => directory,
   }
-  contain ::jolokia::install
+  contain jolokia::install
 }
