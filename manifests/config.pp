@@ -12,7 +12,7 @@ define jolokia::config (
   $disclaimer = "# This file is controlled by puppet\n# LOCAL CHANGES WILL BE OVERWRITTEN\n#"
   $props_str = $properties.join_keys_to_values('=').join("\n")
 
-  file { "${::jolokia::config_dir}/${app}.properties":
+  file { "${jolokia::config_dir}/${app}.properties":
     ensure  => $ensure,
     content => "${disclaimer}\n${props_str}\n",
   }
