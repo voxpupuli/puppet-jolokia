@@ -5,7 +5,7 @@
 class jolokia::install {
 
   package { 'jolokia-agent':
-    ensure => $::jolokia::jvm_agent_ensure,
-    name   => $::jolokia::jvm_agent_name,
+    ensure => $jolokia::jvm_agent_ensure,
+    name   => $jolokia::jvm_agent_name,
   }
 }

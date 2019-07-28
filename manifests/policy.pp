@@ -12,7 +12,7 @@ define jolokia::policy (
 ) {
 
   $params = { 'allowed_hosts' => $allowed_hosts }
-  file { "${::jolokia::config_dir}/${app}.xml":
+  file { "${jolokia::config_dir}/${app}.xml":
     ensure  => $ensure,
     content => epp("${module_name}/policy.xml.epp", $params),
   }
