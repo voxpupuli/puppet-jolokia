@@ -10,7 +10,6 @@ define jolokia::policy (
   Enum['file', 'absent'] $ensure        = 'file',
   Array[String]          $allowed_hosts = ['127.0.0.1', '::1'],
 ) {
-
   $params = { 'allowed_hosts' => $allowed_hosts }
   file { "${jolokia::config_dir}/${app}.xml":
     ensure  => $ensure,

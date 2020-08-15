@@ -20,7 +20,7 @@ jolokia::config { 'puppetserver':
   properties => $config,
 }
 
-$hosts = [ '1.1.1.1', '::1' ]
+$hosts = ['1.1.1.1', '::1']
 jolokia::policy { 'security':
   allowed_hosts => $hosts,
 }
