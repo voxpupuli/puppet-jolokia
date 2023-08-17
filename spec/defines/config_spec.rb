@@ -7,7 +7,7 @@ describe 'jolokia::config', type: :define do
   let(:title) { 'puppetserver' }
   let(:params) do
     {
-      ensure:        'file',
+      ensure: 'file',
       properties: { 'config' => '/etc/jolokia/security.xml',
                     'host'   => '*',
                     'port'   => '7887' }
