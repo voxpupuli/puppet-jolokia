@@ -29,6 +29,7 @@ describe 'jolokia' do
 
           it { is_expected.to contain_class('jolokia') }
           it { is_expected.to contain_file('/opt/etc/jolokia').with_ensure('directory') }
+
           it do
             is_expected.to contain_package('jolokia-agent').
               with_ensure('1.3.3').
