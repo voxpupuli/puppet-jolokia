@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'jolokia::config', type: :define do
   let :pre_condition do
-    'include ::jolokia'
+    'include jolokia'
   end
   let(:title) { 'puppetserver' }
   let(:params) do

@@ -22,7 +22,7 @@ makes life easier.
 ### Usage
 
 ```puppet
-include ::jolokia
+include jolokia
 ```
 
 After this statement you should be able to extend your JVMs' `JAVA_OPTS` with
