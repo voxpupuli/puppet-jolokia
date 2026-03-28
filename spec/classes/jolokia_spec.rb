@@ -21,7 +21,7 @@ describe 'jolokia' do
             {
               jvm_agent_ensure: '1.3.3',
               jvm_agent_name:   'jolokia-agents',
-              config_dir:       '/opt/etc/jolokia'
+              config_dir:       '/opt/etc/jolokia',
             }
           end
 
@@ -31,9 +31,9 @@ describe 'jolokia' do
           it { is_expected.to contain_file('/opt/etc/jolokia').with_ensure('directory') }
 
           it do
-            is_expected.to contain_package('jolokia-agent').
-              with_ensure('1.3.3').
-              with_name('jolokia-agents')
+            is_expected.to contain_package('jolokia-agent')
+              .with_ensure('1.3.3')
+              .with_name('jolokia-agents')
           end
         end
       end
